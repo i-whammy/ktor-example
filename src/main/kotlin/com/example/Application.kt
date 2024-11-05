@@ -4,7 +4,7 @@ import com.example.plugins.*
 import io.ktor.server.application.*
 
 fun main(args: Array<String>) {
-    io.ktor.server.jetty.jakarta.EngineMain.main(args)
+    io.ktor.server.netty.EngineMain.main(args)
 }
 
 fun Application.module() {
