@@ -1,8 +1,8 @@
 package com.example.rest
 
 import com.example.rest.plugins.configureDependencies
-import com.example.rest.plugins.configureSerializer
 import com.example.rest.plugins.configureRouting
+import com.example.rest.plugins.configureSerializer
 import io.ktor.server.application.*
 
 fun main(args: Array<String>) {

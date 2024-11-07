@@ -3,10 +3,9 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.example</groupId>
-    <artifactId>com-example-ktor-sample</artifactId>
+    <artifactId>ktor-example</artifactId>
     <version>0.0.1</version>
-    <name>com.example.ktor-sample</name>
-    <description>com.example.ktor-sample</description>
+    <name>ktor-example</name>
     <properties>
         <kotlin.code.style>official</kotlin.code.style>
         <kotlin_version>2.0.21</kotlin_version>

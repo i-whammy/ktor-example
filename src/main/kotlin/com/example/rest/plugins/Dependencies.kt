@@ -19,11 +19,11 @@ fun Application.configureDependencies() {
 }
 
 val appModule = module {
-//    singleOf(::InMemoryUserDriver) { bind<UserDriver>() }
-//    singleOf(::UserGateway) { bind<UserPort>() }
-//    singleOf(::UserUseCase)
+    singleOf(::InMemoryUserDriver) { bind<UserDriver>() }
+    singleOf(::UserGateway) { bind<UserPort>() }
+    singleOf(::UserUseCase)
 
-    single<UserDriver> { InMemoryUserDriver()}
-    single<UserPort> { UserGateway(get())}
-    single { UserUseCase(get()) }
+//    single<UserDriver> { InMemoryUserDriver()}
+//    single<UserPort> { UserGateway(get())}
+//    single { UserUseCase(get()) }
 }
