@@ -8,14 +8,14 @@
     <name>ktor-example</name>
     <properties>
         <kotlin.code.style>official</kotlin.code.style>
-        <kotlin_version>2.0.21</kotlin_version>
-        <ktor_version>3.0.1</ktor_version>
-        <logback_version>1.4.14</logback_version>
-        <slf4j_version>2.0.9</slf4j_version>
+        <kotlin.version>2.0.21</kotlin.version>
+        <ktor.version>3.0.1</ktor.version>
+        <logback.version>1.4.14</logback.version>
+        <slf4j.version>2.0.9</slf4j.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <kotlin.compiler.incremental>true</kotlin.compiler.incremental>
         <main.class>io.ktor.server.netty.EngineMain</main.class>
-        <koin_version>4.0.0</koin_version>
+        <koin.version>4.1.0-Beta5</koin.version>
     </properties>
     <repositories>
     </repositories>
@@ -23,22 +23,22 @@
         <dependency>
             <groupId>ch.qos.logback</groupId>
             <artifactId>logback-classic</artifactId>
-            <version>${logback_version}</version>
+            <version>${logback.version}</version>
         </dependency>
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-api</artifactId>
-            <version>${slf4j_version}</version>
+            <version>${slf4j.version}</version>
         </dependency>
         <dependency>
             <groupId>io.ktor</groupId>
             <artifactId>ktor-server-config-yaml-jvm</artifactId>
-            <version>${ktor_version}</version>
+            <version>${ktor.version}</version>
         </dependency>
         <dependency>
             <groupId>org.jetbrains.kotlin</groupId>
             <artifactId>kotlin-test-junit</artifactId>
-            <version>${kotlin_version}</version>
+            <version>${kotlin.version}</version>
             <scope>test</scope>
         </dependency>
         <dependency>
@@ -50,32 +50,32 @@
         <dependency>
             <groupId>io.ktor</groupId>
             <artifactId>ktor-server-core-jvm</artifactId>
-            <version>${ktor_version}</version>
+            <version>${ktor.version}</version>
         </dependency>
         <dependency>
             <groupId>io.ktor</groupId>
             <artifactId>ktor-server-netty-jvm</artifactId>
-            <version>${ktor_version}</version>
+            <version>${ktor.version}</version>
         </dependency>
         <dependency>
             <groupId>io.insert-koin</groupId>
             <artifactId>koin-ktor</artifactId>
-            <version>${koin_version}</version>
+            <version>${koin.version}</version>
         </dependency>
         <dependency>
             <groupId>io.insert-koin</groupId>
             <artifactId>koin-core</artifactId>
-            <version>${koin_version}</version>
+            <version>${koin.version}</version>
         </dependency>
         <dependency>
             <groupId>io.ktor</groupId>
             <artifactId>ktor-server-content-negotiation-jvm</artifactId>
-            <version>${ktor_version}</version>
+            <version>${ktor.version}</version>
         </dependency>
         <dependency>
             <groupId>io.ktor</groupId>
             <artifactId>ktor-serialization-jackson-jvm</artifactId>
-            <version>${ktor_version}</version>
+            <version>${ktor.version}</version>
         </dependency>
     </dependencies>
     <build>
@@ -91,7 +91,7 @@
             <plugin>
                 <artifactId>kotlin-maven-plugin</artifactId>
                 <groupId>org.jetbrains.kotlin</groupId>
-                <version>${kotlin_version}</version>
+                <version>${kotlin.version}</version>
                 <configuration>
                     <jvmTarget>1.8</jvmTarget>
                 </configuration>
