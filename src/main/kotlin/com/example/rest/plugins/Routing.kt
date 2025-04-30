@@ -25,7 +25,6 @@ fun Application.configureRouting() {
     }
 }
 
-
 data class UserResponse(val userId: String, val name: String, val emailAddress: String)
 
 fun User.toUserResponse() = this.let { UserResponse(it.userId.idValue, it.name, it.emailAddress) }

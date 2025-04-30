@@ -6,8 +6,8 @@ import com.example.gateway.UserGateway
 import com.example.usecase.UserPort
 import com.example.usecase.UserUseCase
 import io.ktor.server.application.*
-import org.koin.core.module.dsl.singleOf
 import org.koin.core.module.dsl.bind
+import org.koin.core.module.dsl.singleOf
 import org.koin.dsl.module
 import org.koin.ktor.plugin.Koin
 
