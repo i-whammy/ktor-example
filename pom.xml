@@ -8,9 +8,9 @@
     <name>ktor-example</name>
     <properties>
         <kotlin.code.style>official</kotlin.code.style>
-        <kotlin.version>2.0.21</kotlin.version>
-        <ktor.version>3.0.1</ktor.version>
-        <logback.version>1.4.14</logback.version>
+        <kotlin.version>2.2.0</kotlin.version>
+        <ktor.version>3.2.3</ktor.version>
+        <logback.version>1.5.13</logback.version>
         <slf4j.version>2.0.9</slf4j.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <kotlin.compiler.incremental>true</kotlin.compiler.incremental>
@@ -76,6 +76,22 @@
             <groupId>io.ktor</groupId>
             <artifactId>ktor-serialization-jackson-jvm</artifactId>
             <version>${ktor.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.ktor</groupId>
+            <artifactId>ktor-server-sse-jvm</artifactId>
+            <version>${ktor.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.wiremock</groupId>
+            <artifactId>wiremock</artifactId>
+            <version>3.13.1</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/com.squareup.okhttp3/okhttp -->
+        <dependency>
+            <groupId>com.squareup.okhttp3</groupId>
+            <artifactId>okhttp-jvm</artifactId>
+            <version>5.1.0</version>
         </dependency>
     </dependencies>
     <build>

@@ -1,7 +1,7 @@
-package com.example.usecase
+package com.example.api.usecase
 
-import com.example.domain.User
-import com.example.domain.UserId
+import com.example.api.domain.User
+import com.example.api.domain.UserId
 
 class UserUseCase(private val userPort: UserPort) {
     fun fetchUser(userId: UserId): User {

@@ -1,8 +1,8 @@
-package com.example.gateway
+package com.example.api.gateway
 
-import com.example.domain.User
-import com.example.domain.UserId
-import com.example.usecase.UserPort
+import com.example.api.domain.User
+import com.example.api.domain.UserId
+import com.example.api.usecase.UserPort
 
 class UserGateway(private val userDriver: UserDriver): UserPort {
     override fun fetchUser(userId: UserId): User? {

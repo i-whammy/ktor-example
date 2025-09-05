@@ -1,8 +1,8 @@
-package com.example.rest.plugins
+package com.example.api.rest.plugins
 
-import com.example.domain.User
-import com.example.domain.UserId
-import com.example.usecase.UserUseCase
+import com.example.api.domain.User
+import com.example.api.domain.UserId
+import com.example.api.usecase.UserUseCase
 import io.ktor.http.*
 import io.ktor.server.application.*
 import io.ktor.server.response.*

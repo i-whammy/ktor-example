@@ -1,10 +1,10 @@
-package com.example.rest.plugins
+package com.example.api.rest.plugins
 
-import com.example.driver.InMemoryUserDriver
-import com.example.gateway.UserDriver
-import com.example.gateway.UserGateway
-import com.example.usecase.UserPort
-import com.example.usecase.UserUseCase
+import com.example.api.driver.InMemoryUserDriver
+import com.example.api.gateway.UserDriver
+import com.example.api.gateway.UserGateway
+import com.example.api.usecase.UserPort
+import com.example.api.usecase.UserUseCase
 import io.ktor.server.application.*
 import org.koin.core.module.dsl.bind
 import org.koin.core.module.dsl.singleOf

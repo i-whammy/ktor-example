@@ -1,4 +1,4 @@
-package com.example.domain
+package com.example.api.domain
 
 data class UserId(val idValue: String)
 

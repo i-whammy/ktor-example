@@ -1,7 +1,7 @@
-package com.example.driver
+package com.example.api.driver
 
-import com.example.gateway.UserDriver
-import com.example.gateway.UserEntity
+import com.example.api.gateway.UserDriver
+import com.example.api.gateway.UserEntity
 
 class InMemoryUserDriver: UserDriver {
     private val users = listOf(

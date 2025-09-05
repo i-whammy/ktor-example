@@ -1,12 +1,14 @@
-package com.example
+package com.example.routebypath
 
 import io.ktor.server.application.*
+import io.ktor.server.netty.EngineMain
 import io.ktor.server.response.*
 import io.ktor.server.routing.*
 import org.koin.core.component.KoinComponent
 import org.koin.core.component.inject
 import org.koin.core.qualifier.named
 import org.koin.dsl.module
+import org.koin.ktor.plugin.Koin
 
 // インターフェース
 interface Service {
@@ -39,7 +41,7 @@ class MyComponent(private val call: ApplicationCall) : KoinComponent {
 }
 
 fun Application.module() {
-    install(org.koin.ktor.plugin.Koin) {
+    install(Koin) {
         modules(appModule)
     }
 
@@ -52,5 +54,5 @@ fun Application.module() {
 }
 
 fun main() {
-    io.ktor.server.netty.EngineMain.main(arrayOf("-port=8080"))
+    EngineMain.main(arrayOf("-port=8080"))
 }

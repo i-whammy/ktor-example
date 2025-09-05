@@ -1,4 +1,4 @@
-package com.example.rest.plugins
+package com.example.api.rest.plugins
 
 import com.fasterxml.jackson.databind.SerializationFeature
 import io.ktor.serialization.jackson.*
