@@ -1,4 +1,4 @@
-package com.example.mock
+package com.example.api.rest.plugins.mock
 
 import com.github.tomakehurst.wiremock.WireMockServer
 import com.github.tomakehurst.wiremock.client.WireMock.*

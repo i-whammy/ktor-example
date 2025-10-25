@@ -1,10 +1,10 @@
-package com.example
+package com.example.api
 
 import com.example.api.rest.plugins.configureDependencies
 import com.example.api.rest.plugins.configureRouting
 import com.example.api.rest.plugins.configureSSERouting
 import com.example.api.rest.plugins.configureSerializer
-import com.example.mock.WireMockRunner
+import com.example.api.rest.plugins.mock.WireMockRunner
 import io.ktor.server.application.*
 import io.ktor.server.netty.EngineMain
 

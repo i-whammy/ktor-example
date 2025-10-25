@@ -9,7 +9,7 @@
     <properties>
         <kotlin.code.style>official</kotlin.code.style>
         <kotlin.version>2.2.0</kotlin.version>
-        <ktor.version>3.2.3</ktor.version>
+        <ktor.version>3.3.1</ktor.version>
         <logback.version>1.5.13</logback.version>
         <slf4j.version>2.0.9</slf4j.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -95,6 +95,11 @@
         <dependency>
             <groupId>io.ktor</groupId>
             <artifactId>ktor-client-cio-jvm</artifactId>
+            <version>${ktor.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.ktor</groupId>
+            <artifactId>ktor-server-di</artifactId>
             <version>${ktor.version}</version>
         </dependency>
     </dependencies>
